@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: security_jwt_example
+
+logging:
+  level:
+    org.springframework.security: TRACE
