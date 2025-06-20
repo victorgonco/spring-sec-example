@@ -1,4 +1,4 @@
-package gonco.dev.security_jwt_example;
+package gonco.dev.spring_security_example;
 
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static gonco.dev.security_jwt_example.RoleConstants.ROLE_POST;
-import static gonco.dev.security_jwt_example.RoleConstants.ROLE_PUT;
+import static gonco.dev.spring_security_example.RoleConstants.ROLE_POST;
+import static gonco.dev.spring_security_example.RoleConstants.ROLE_PUT;
 
 @RestController
 @RequestMapping("/")
 public class SimpleWebController {
 
-    private static final String RETURN_MESSAGE_TEMPLATE = "Congrats, you've reach a %s localhost:8080/ endpoint ✅\n";
+    private static final String RETURN_MESSAGE_TEMPLATE = "Congrats, you've reach the %s localhost:8080/ endpoint ✅\n";
 
     @GetMapping
     public String get() {

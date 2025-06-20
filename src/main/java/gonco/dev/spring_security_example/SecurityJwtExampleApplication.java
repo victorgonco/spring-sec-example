@@ -1,4 +1,4 @@
-package gonco.dev.security_jwt_example;
+package gonco.dev.spring_security_example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

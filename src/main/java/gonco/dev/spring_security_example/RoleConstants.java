@@ -1,4 +1,4 @@
-package gonco.dev.security_jwt_example;
+package gonco.dev.spring_security_example;
 
 public final class RoleConstants {
 

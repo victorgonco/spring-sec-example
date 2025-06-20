@@ -1,7 +1,8 @@
 spring:
   application:
-    name: security_jwt_example
-
+    name: spring_security_poc_api
+server:
+  port: ${SERVER_PORT:8080}
 logging:
   level:
     org.springframework.security: TRACE
