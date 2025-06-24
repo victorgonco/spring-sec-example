@@ -111,10 +111,26 @@ kubectl apply -f .
 ```
 ---
 **Important** note that: Using kubernetes with WSL, localhost doesn't work, if you're running minikube just like me,  
-you'll need to access the endpoints by the node IP. Which can be found using the following command: `kubectl get nodes -o wide`  
+you'll need to access the endpoints by the node IP and the port above 30000.  
+
+Node IP can be found using the following command: `kubectl get nodes -o wide`  
+The port is stored at service-nodeport-poc-security-example.yml > ports > nodePort.
 
 ---
+## ☸️ Running on with Helm (with K8s/Minikube)
 
+
+### 🛠️ Follow the steps of K8s
+The helm version is made to run a simple example with templates, so follow the k8s version until building the image  
+in the minikube env.
+
+### Next steps
+1. Go to chart/poc-security-example-api-chart
+2. Run the following command.
+```bash
+helm install spring-sec-api .
+```
+3. Go and test the application.
 ## 📄 License
 
 This project is provided for educational purposes and is not intended for production use. Feel free to fork and adapt as needed.
