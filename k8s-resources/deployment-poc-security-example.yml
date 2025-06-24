@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-poc-security-example
+spec:
+  replicas: 3
+  template:
+    metadata:
+      name: poc-security-example-api
+      labels:
+        app: poc-security-example-api
+    spec:
+      containers:
+        - name: poc-security-example-api-container
+          image: goncodev/spring-security-poc-api:1.0
+          ports:
+            - containerPort: 3000
+          imagePullPolicy: Never
+  selector:
+    matchLabels:
+      app: poc-security-example-api
